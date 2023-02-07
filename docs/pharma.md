@@ -1,8 +1,8 @@
 # How to deploy the platform
 
-![CAP Platform Pharma Blueprint](images/pharma.png?raw=true "CAP Platform Pharma Blueprint")
+![CAP Platform Pharma Blueprint](images/Pharma.png?raw=true "CAP Platform Pharma Blueprint")
 
-Here you can find [Pharma Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/pharma), following the step described below you can run the CAP.
+Here you can find [Pharma Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/tree/main/pharma), following the step described below you can run the CAP.
 
 The CAP platform is provided in two folders:
 - **PharmaCAP_Processing:** containing the docker-compose for Apache Spark (spark master and workers), HDFS, FIWARE Draco and Apache Livy. It also contains algorithm solutions and data to be executed and the FIWARE Orion-PySpark Connector.

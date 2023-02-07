@@ -1,8 +1,8 @@
 # How to deploy the platform
 
-![CAP Platform Steel Blueprint](images/steel.png?raw=true "CAP Platform Steel Blueprint")
+![CAP Platform Steel Blueprint](images/Steel.png?raw=true "CAP Platform Steel Blueprint")
 
-Here you can find [Steel Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/steel), following the step described below you can run the CAP.
+Here you can find [Steel Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/tree/main/pharma), following the step described below you can run the CAP.
 
 ### DEPLOYMENT STEPS:
 -   [Organizing steel Folder](#step-1-organizing-steel-folder)

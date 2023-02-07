@@ -7,10 +7,10 @@ Since the CAP is totally customizable, each domain selected the components to sa
 
 ## Documentation Contents
 
--   [Reference Architecture Overview](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/docs/RA.md)
--   [Resources Allocation](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/docs/ResourcesAllocation.md)
--   [Pharma Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/docs/pharma.md)
--   [Steel Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/docs/steel.md)
--   [Asphalt Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/docs/asphalt.md)
--   [Clean CAP](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/docs/cleanCAP.md)
+-   [Reference Architecture Overview](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/RA.md)
+-   [Resources Allocation](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/ResourcesAllocation.md)
+-   [Pharma Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/pharma.md)
+-   [Steel Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/steel.md)
+-   [Asphalt Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/asphalt.md)
+-   [Clean CAP](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/cleanCAP.md)
 

@@ -1,4 +1,4 @@
-### The Reference Architecture layering
+# The Reference Architecture layering
 
 ![CAP Platform Reference Architecture](images/RA_in_the_large.png?raw=true "CAP Platform Reference Architecture")
 
