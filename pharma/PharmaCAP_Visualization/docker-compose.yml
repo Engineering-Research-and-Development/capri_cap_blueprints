@@ -1,0 +1,212 @@
+version: "3"
+
+services:
+  
+  iotage:
+    hostname: iotage
+    image: iotagent4fiware/iotagent-opcua:latest
+    networks:
+      - hostnet
+      - iotnet
+    ports:
+      - "4001:4001"
+      - "9229:9229"
+    depends_on:
+      - iotmongo
+      - orion
+    volumes:
+      - ./conf:/opt/iotagent-opcua/conf
+    logging:
+      options:
+          max-size : "200m"
+    environment:     
+      - "IOTA_CB_HOST=orion"
+      - "IOTA_CB_PORT=1026"
+      - "IOTA_NORTH_PORT=4001"
+      - "IOTA_REGISTRY_TYPE=memory"
+      - "IOTA_MONGO_HOST=iot_mongo"
+      - "IOTA_MONGO_PORT=27017"
+      - "IOTA_MONGO_DB=iotagent_opcua"
+      - "IOTA_PROVIDER_URL=http://iotage:4001"
+      - "IOTA_OPCUA_ENDPOINT=opc.tcp://{IP}:{PORT}{URI}"
+      - "IOTA_OPCUA_SECURITY_MODE=None"
+      - "IOTA_OPCUA_SECURITY_POLICY=None"
+      #- "IOTA_OPCUA_SECURITY_USERNAME=null"
+      #- "IOTA_OPCUA_SECURITY_PASSWORD=null"
+      - "IOTA_OPCUA_UNIQUE_SUBSCRIPTION=false"
+      - "IOTA_OPCUA_MT_POLLING=false"
+      - "IOTA_OPCUA_MT_AGENT_ID=age01_"
+      - "IOTA_OPCUA_MT_ENTITY_ID=age01_Pharma"
+      - "IOTA_OPCUA_MT_ENTITY_TYPE=Device"
+      - "IOTA_OPCUA_MT_NAMESPACE_IGNORE=0,7"
+    networks:
+      capri_spark_net:
+        ipv4_address: 172.28.3.1
+
+  iotmongo:
+    hostname: iot_mongo
+    image: mongo:4.2
+    networks:
+      - iotnet
+    volumes:
+      - iot_mongo_data:/data/db
+      - iot_mongo_conf:/data/configdb
+    logging:
+      options:
+          max-size : "200m"
+    networks:
+      capri_spark_net:
+        ipv4_address: 172.28.3.3
+
+  ################ OCB ################
+
+  orion:
+    hostname: orion
+    image: fiware/orion:latest
+    networks:
+      - hostnet
+      - ocbnet
+      - capri_spark_net
+    ports:
+      - "1026:1026"
+      - "5000:5000"
+    depends_on:
+      - orion_mongo
+      - quantumleap
+    logging:
+      options:
+          max-size : "200m"
+    # add -forwarding if using NGSI-ld
+    #command: -statCounters -dbhost orion_mongo -logLevel INFO -forwarding
+    command: -statCounters -dbhost orion_mongo -logLevel INFO -corsOrigin __ALL
+    extra_hosts:
+      - "draco:172.28.1.7"
+    networks:
+      capri_spark_net:
+        ipv4_address: 172.28.3.10
+
+
+
+  orion_mongo:
+    hostname: orion_mongo
+    image: mongo:4.2
+    networks:
+      - ocbnet
+    ports:
+      - "27017:27017"
+    volumes:
+      - orion_mongo_data:/data/db
+      - orion_mongo_conf:/data/configdb
+    logging:
+      options:
+          max-size : "200m"
+    command: --nojournal
+    networks:
+      capri_spark_net:
+        ipv4_address: 172.28.3.11
+        
+        
+        
+  quantumleap:
+    image: orchestracities/quantumleap:${QL_VERSION:-latest}
+    ports:
+      - "8668:8668"
+    depends_on:
+      - orion_mongo      
+      - crate
+    environment:
+      - CRATE_HOST=${CRATE_HOST:-crate}
+      - USE_GEOCODING=True
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - LOGLEVEL=DEBUG
+    logging:
+      options:
+          max-size : "200m"
+    networks:
+      capri_spark_net:
+        ipv4_address: 172.28.3.12
+        
+        
+        
+  crate:
+    image: crate:${CRATE_VERSION:-4.6.7}
+    command: crate -Cauth.host_based.enabled=false
+      -Ccluster.name=democluster -Chttp.cors.enabled=true -Chttp.cors.allow-origin="*"
+    environment:
+      - LOG4J_FORMAT_MSG_NO_LOOKUPS=true
+    ports:
+      # Admin UI
+      - "4200:4200"
+      # Transport protocol
+      - "4300:4300"
+    volumes:
+      - cratedata:/data
+    logging:
+      options:
+          max-size : "200m"
+    networks:
+      capri_spark_net:
+        ipv4_address: 172.28.3.13
+
+
+
+  timescale:
+    image: timescale/timescaledb-postgis:${TIMESCALE_VERSION:-2.3.0-pg13}
+    ports:
+      - "5432:5432"
+      # Don't expose container port 5432 with the same number outside of the
+      # swarm. In the Travis test env, there's already a PG instance running
+      # on port 5432!
+    environment:
+      - POSTGRES_PASSWORD=*
+    logging:
+      options:
+          max-size : "200m"
+          
+  
+
+  grafana:
+    image: rdlabengpa/capri-viz-grafana:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - crate
+    volumes:
+      - grafana_data:/var/lib/grafana
+    logging:
+      options:
+          max-size : "200m"
+    networks:
+      capri_spark_net:
+        ipv4_address: 172.28.3.17
+    environment:
+      - GF_PANELS_DISABLE_SANITIZE_HTML=true  
+
+
+
+  redis:
+    image: redis:${REDIS_VERSION:-6.2.3}
+    logging:
+      options:
+          max-size : "200m"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+  
+volumes:
+  iot_mongo_data:
+  iot_mongo_conf:
+  orion_mongo_data:
+  orion_mongo_conf:
+  cratedata:
+  redisdata:
+  grafana_data:             
+
+networks:
+  hostnet:
+  iotnet:
+  ocbnet:
+  capri_spark_net:
+      external: true
