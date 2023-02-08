@@ -11,24 +11,22 @@ The CAP platform is provided in two folders:
 This guide take "pharma" as starting working folder for each step.
 
 ### DEPLOYMENT STEPS:
--   [Organizing CAPRI Folder](#step-1-organizing-capri-folder)
+-   [Organizing Pharma Folder](#step-1-organizing-pharmacap_rocessing-folder)
 -   [Starting Spark Compose and simulators](#step-2-starting-spark-compose-and-simulators)
 -   [Configure OPCUA Agents](#step-3-configure-opcua-agents)
--   [Starting IOTAgent docker compose](#step-4-starting-iotagent-docker-compose)
+-   [Starting PharmaCAP_Visualization docker compose](#step-4-starting-pharmacap_visualization-docker-compose)
 -   [Access Main Services](#step-5-access-main-services)
 -   [OCB Entities and Subscriptions](#step-6-ocb-entities-and-subscriptions)
 -   [Running the Algorithms](#step-7-running-the-algorithms)
 -   [Setting up Grafana](#step-8-setting-up-grafana)
 
-## Step 1: Organizing CAPRI Folder
+## Step 1: Organizing PharmaCAP_Processing Folder
 CAP Platform is already provided with all data necessary to deploy algorithms provided until now.
 If you have not to add/modify any solution, you can skip this step and go to step 2.
 Otherwise, to make any modification or addition to the algorithms, this is the folder structure:
 
-**CAPRI**<br/>
+**PharmaCAP_Processing**<br/>
 ---| docker-compose.yml<br/>
----| hadoop.env<br/>
----| init.sql<br/>
 ---| **DATA**<br/>
 ------| draco<br/>
 ------| setup<br/>
@@ -80,7 +78,7 @@ This step is about how to configure and deploy a [FIWARE OPCUA Agent](https://gi
 
 In the **PharmaCAP_Visualization** folder there is data regarding OPCUA Agent and grafana data. The folder structure is the following
 
-**IOTAgent**<br/>
+**PharmaCAP_Visualization**<br/>
 ---| docker-compose.yml<br/>
 ---| grafana_data <br/>
 ---| Grafana Dashboards <br/>

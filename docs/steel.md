@@ -2,11 +2,11 @@
 
 ![CAP Platform Steel Blueprint](images/Steel.png?raw=true "CAP Platform Steel Blueprint")
 
-Here you can find [Steel Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/tree/main/pharma), following the step described below you can run the CAP.
+Here you can find [Steel Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/tree/main/steel), following the step described below you can run the CAP.
 
 ### DEPLOYMENT STEPS:
 -   [Organizing steel Folder](#step-1-organizing-steel-folder)
--   [Starting Spark-Kafka Compose](#step-2-starting-spark-compose-and-simulators)
+-   [Starting Spark-Kafka Compose](#step-2-starting-compose-and-simulators)
 -   [Configure Kafka Topics](#step-3-configure-kafka-topics)
 -   [Access Main Services](#step-4-access-main-services)
 -   [Running the Algorithm](#step-5-running-the-algorithm)
@@ -16,7 +16,7 @@ CAP Platform is already provided with all data necessary to deploy algorithms pr
 If you have not to add/modify any solution, you can skip this step and go to step 2.
 Otherwise, to make any modification or addition to the algorithms, this is the folder structure:
 
-**CAPRI**<br/>
+**steel**<br/>
 ---| docker-compose.yml<br/>
 ---| hadoop.env<br/>
 ---| init.sql<br/>
@@ -40,7 +40,7 @@ Otherwise, to make any modification or addition to the algorithms, this is the f
 Place each additional solution in the **py** folder. An example of solution structure was provided by opening **SolutionN** folder.
 Other folders contains data and configuration for each component.
 
-## Step 2: Starting Spark Compose
+## Step 2: Starting Compose
 
 First of all it is necessary to start CAP docker compose.
 
@@ -126,16 +126,12 @@ kafka-configs.sh --zookeeper 136.243.156.113:2181 --entity-type topics --alter -
 In this way it is possible to automatically delete data from topics and avoid high disk space filling ratio. 
 
 
-
-
 ## Step 4: Accessing main services
 
 Once all docker composes are up and algorithms are running, it is possible to access the following main services.
 If the machine is equipped with a browser, you can access them through the exposed ports. If you have to access them from another machine, consider to open the ports or set up a ssh tunneling. <br/>
 Main services to be accessed are:
 - **YARN** : localhost:8788 (on browser to check spark app statuses)
-
-
 
 
 ## Step 5: Running the algorithms
