@@ -14,3 +14,6 @@ Since the CAP is totally customizable, each domain selected the components to sa
 -   [Asphalt Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/asphalt.md)
 -   [Clean CAP](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/cleanCAP.md)
 
+
+CAP Platform has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreements No 870062 (CAPRI)
+

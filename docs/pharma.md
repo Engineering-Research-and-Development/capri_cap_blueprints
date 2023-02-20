@@ -1,6 +1,19 @@
-# How to deploy the platform
+# Introduction to Pharma Blueprint
+
+The main focus of Pharma use case is the development and implementation of advanced control concepts based on the cognitive solutions in the existing continuous line.
+For that CAPRI projec will support the:
+- increase the robustness of the process
+- secure constant product quality
+- increase effectiveness (raw material, energy, process time, storage capacity)
+- reduce waste material
+- reduce labour effort (e.g. off-line end product testing)
+
+
+The Pharma blueprint has been developed with open-source components to satisfy the needs abovementioned. In the following section is reported a guide to deploy the platform, useful as a starting point to increase its functionalities.
 
 ![CAP Platform Pharma Blueprint](images/Pharma.png?raw=true "CAP Platform Pharma Blueprint")
+
+# How to deploy the platform
 
 Here you can find [Pharma Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/tree/main/pharma), following the step described below you can run the CAP.
 
