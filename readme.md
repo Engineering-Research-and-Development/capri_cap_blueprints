@@ -1,10 +1,10 @@
 # CAP Platform Blueprints
 
 ![CAP Platform Blueprints](docs/images/home.png?raw=true "CAP Platform Blueprints")
-<div style="text-align: justify">  
+
 In this repository are reported the three Blueprints coming from the Asphalt, Steel and Pharma domains where the CAP Platform is adopted.
 Since the CAP is totally customizable, each domain selected the components to satisfy its own needs. In the dedicated folders is described how to deploy the customized CAP can be used as a starting point for future developments.
-</div>
+
 ## Documentation Contents
 
 -   [Reference Architecture Overview](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/blob/main/docs/RA.md)
