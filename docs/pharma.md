@@ -1,5 +1,5 @@
 # Introduction to Pharma Blueprint
-
+<div style="text-align: justify">  
 The main focus of Pharma use case is the development and implementation of advanced control concepts based on the cognitive solutions in the existing continuous line.
 For that CAPRI projec will support the:
 - increase the robustness of the process
@@ -285,3 +285,5 @@ In order to make grafana working, the following steps should be followed: <br/>
   - Click on import
   - Copy the content of the solution-related dashboard from the abovementioned folder to the JSON Model
   - Select the Dashboard folder and confirm the importing.
+  
+</div>

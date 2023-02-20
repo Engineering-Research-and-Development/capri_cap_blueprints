@@ -1,5 +1,5 @@
 # The Reference Architecture layering
-
+<div style="text-align: justify">  
 ![CAP Platform Reference Architecture](images/RA_in_the_large.png?raw=true "CAP Platform Reference Architecture")
 
 The resulting three-tier RA is depicted in Figure above and defines several functional macro-components:
@@ -26,3 +26,4 @@ Components in every layer can be combined according with a Lego-like approach, f
 At the same time the modularity makes possible to approach a microservices design of the application that produces smaller software code, to be organizer as docker containers, so they could be run on smaller processing elements and restricted resources, as we can find in current plants, thus making easier the reuse of existing computing equipments.
 
 In this respect, the CAP Reference Architecture allows the implementation on both cloud and edge, that can be run on virtualized computing resources nearer to where multiple streams of data are created, thus addressing system latency, privacy, cost and resiliency challenges that a pure cloud computing approach cannot address, and make a big difference in process industry. The edge implementation smoothly integrates with the cloud version, to enable data collection, storing, processing and presentation directly from the plant. Most of the short-term processing, including some data analytics, artificial intelligence and cognitive tasks could be managed at the edge, while cloud resources can be devoted to non-mission critical - massive processing of data.
+</div>

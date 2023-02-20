@@ -1,5 +1,5 @@
 # Introduction to Steel Blueprint
-
+<div style="text-align: justify">  
 Although steel mills today generate a lot of data in their production processes, it is often difficult to identify the source of a problem found in the final product, simply because the tracking of individual specimen over their entire lifetime is not possible and the sensor data cannot be associated to products. Furthermore, deviations from the target parameters occurring at an early stage in the processing chain cannot easily be identified in real time, since this requires knowledge of the target parameters for the final product and an estimation of the further processing risk. This prevents for instance the implementation of corrective actions to achieve the target parameters or the early dismissal of off-spec products to save further processing costs.
 The CAPRI project will lead to a significantly improved observability in the pilot plant by making use of a newly installed tracking system for individual steel billets and bars and hence enabling the generation of product-oriented datasets. Furthermore, a set of cognitive sensors to be developed will further enhance the product data by derived information. These sensors are partly based on first-principle models, hybrid models or purely data-driven models, and enable the estimation of a processing risk by means of machine learning algorithms.
 The steel-making process is very resource intensive, consuming in particular large amounts of energy, in the pilot case mainly electrical energy, but also natural gas and steel scrap. By reducing the number of defective products, the project will lead to a reduced resource consumption and less waste that is being produced, such as steelmaking slags residue, EAF dust residue or refractory residues.
@@ -178,3 +178,5 @@ Moreover there are more things to consider:
   - **executor_cores**: 1
   - **driver_memory** : 512m
   - **executor_memory** : 512m
+  
+  </div>

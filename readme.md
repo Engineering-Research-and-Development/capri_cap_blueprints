@@ -1,5 +1,5 @@
 # CAP Platform Blueprints
-
+<div style="text-align: justify">  
 ![CAP Platform Blueprints](docs/images/home.png?raw=true "CAP Platform Blueprints")
 
 In this repository are reported the three Blueprints coming from the Asphalt, Steel and Pharma domains where the CAP Platform is adopted.
@@ -17,3 +17,4 @@ Since the CAP is totally customizable, each domain selected the components to sa
 
 CAP Platform has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreements N° 870062 (CAPRI)
 
+</div>
