@@ -1,7 +1,7 @@
 # The Reference Architecture layering
-<div style="text-align: justify">  
-![CAP Platform Reference Architecture](images/RA_in_the_large.png?raw=true "CAP Platform Reference Architecture")
 
+![CAP Platform Reference Architecture](images/RA_in_the_large.png?raw=true "CAP Platform Reference Architecture")
+<div style="text-align: justify">  
 The resulting three-tier RA is depicted in Figure above and defines several functional macro-components:
 
 *Smart Field* represents the physical layer and contains industrial devices, machines, actuators, sensors, wearable devices, robots, etc. that are spread in the shop floor, and supports the most common industrial and, more in general, IoT protocols such as OPC UA, MQTT, etc. Standards interfaces and protocols must be used, in order to represent the information collected from the plant and to connect and integrate actuators for implementing the sensing and control mechanisms. Data will be collected typically as Data in Motion (DiM) since data coming from IIoT systems are dynamic and should be ingested and processed in real time.

@@ -10,6 +10,7 @@ With the development of CAP Platform, for the asphalt use case there are improve
 -   optimization of resources consumption,reducing the products wasted
 
 The Asphalt blueprint has been developed with open-source components to satisfy the needs abovementioned. In the following section is reported a guide to deploy the platform, useful as a starting point to increase its functionalities.
+</div>
 
 ![CAP Platform Asphalt Blueprint](images/Asphalt.png?raw=true "CAP Platform Asphalt Blueprint")
 
@@ -97,4 +98,3 @@ Main services to be accessed are:
 - **Draco** : localhost:9090/nifi/ (on browser to run batch algorithms -see later-)
 - **Orion context broker** : localhost:1026/ (from postman or CURLS for entity management)
 - **Superset** : localhost:8080 (on browser, visualization tool)
-</div>

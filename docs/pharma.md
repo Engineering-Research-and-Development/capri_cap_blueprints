@@ -10,6 +10,7 @@ For that CAPRI projec will support the:
 
 
 The Pharma blueprint has been developed with open-source components to satisfy the needs abovementioned. In the following section is reported a guide to deploy the platform, useful as a starting point to increase its functionalities.
+</div>
 
 ![CAP Platform Pharma Blueprint](images/Pharma.png?raw=true "CAP Platform Pharma Blueprint")
 
@@ -285,5 +286,4 @@ In order to make grafana working, the following steps should be followed: <br/>
   - Click on import
   - Copy the content of the solution-related dashboard from the abovementioned folder to the JSON Model
   - Select the Dashboard folder and confirm the importing.
-  
-</div>
+ 

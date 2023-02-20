@@ -6,6 +6,7 @@ The steel-making process is very resource intensive, consuming in particular lar
 Besides a reduction in the number of rejected products, another benefit of the solutions to be developed can be a more consistent product quality.
 
 The Steel blueprint has been developed with open-source components to satisfy the needs abovementioned. In the following section is reported a guide to deploy the platform, useful as a starting point to increase its functionalities.
+</div>
 
 ![CAP Platform Steel Blueprint](images/Steel.png?raw=true "CAP Platform Steel Blueprint")
 
@@ -179,4 +180,3 @@ Moreover there are more things to consider:
   - **driver_memory** : 512m
   - **executor_memory** : 512m
   
-  </div>
