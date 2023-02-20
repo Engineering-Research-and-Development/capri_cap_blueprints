@@ -1,5 +1,5 @@
 # Introduction to Pharma Blueprint
-<div style="text-align: justify">  
+
 The main focus of Pharma use case is the development and implementation of advanced control concepts based on the cognitive solutions in the existing continuous line.
 For that CAPRI projec will support the:
 - increase the robustness of the process
@@ -10,7 +10,7 @@ For that CAPRI projec will support the:
 
 
 The Pharma blueprint has been developed with open-source components to satisfy the needs abovementioned. In the following section is reported a guide to deploy the platform, useful as a starting point to increase its functionalities.
-</div>
+
 
 ![CAP Platform Pharma Blueprint](images/Pharma.png?raw=true "CAP Platform Pharma Blueprint")
 
