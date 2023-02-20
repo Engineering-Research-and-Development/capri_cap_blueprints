@@ -1,7 +1,7 @@
 # Introduction to Pharma Blueprint
 
 The main focus of Pharma use case is the development and implementation of advanced control concepts based on the cognitive solutions in the existing continuous line.
-For that CAPRI projec will support the:
+For that CAPRI project will support the:
 - increase the robustness of the process
 - secure constant product quality
 - increase effectiveness (raw material, energy, process time, storage capacity)
