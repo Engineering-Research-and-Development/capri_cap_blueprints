@@ -1,8 +1,9 @@
 # Introduction to Asphalt Blueprint
-
+<div align="justify">
 In the asphalt mix manufacturing process, most of the measured data is not usually exploited although it may provide very interesting information. There could be variables for which is not known how to relate with the information obtained or whose relationship is unknow. Even more, some variables might not even ever be measured or were measured only in the laboratory. Additionally, since much of the information is not collected or stored properly, the information provided cannot be traced.
 CAPRI project will address the challenge of integrating relevant information data sources as well as knowledge of the personal of the plant, at all the levels: planning, operation and control of the plant. The results of the project will be translated in terms of costs, effectiveness, and product quality for the asphalt mix manufacturing process.
 With the development of CAP Platform, for the asphalt use case there are improvements in the plant like:
+</div>
 -   increase production productivity
 -   predictive maintenance
 -   increase production quality
