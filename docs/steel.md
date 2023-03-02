@@ -14,7 +14,7 @@ The Steel blueprint has been developed with open-source components to satisfy th
 Here you can find [Steel Blueprint](https://github.com/Engineering-Research-and-Development/capri_cap_blueprints/tree/main/steel), following the step described below you can run the CAP.
 
 ### DEPLOYMENT STEPS:
--   [Organizing steel Folder](#step-1-organizing-steel-folder)
+-   [Steel Folder](#step-1-steel-folder)
 -   [Starting Spark-Kafka Compose](#step-2-starting-compose-and-simulators)
 -   [Configure Kafka Topics](#step-3-configure-kafka-topics)
 -   [Access Main Services](#step-4-access-main-services)

@@ -25,7 +25,7 @@ The CAP platform is provided in two folders:
 This guide take "pharma" as starting working folder for each step.
 
 ### DEPLOYMENT STEPS:
--   [Organizing Pharma Folder](#step-1-organizing-pharmacap_rocessing-folder)
+-   [Pharma Folder](#step-1-pharmacap_processing-folder)
 -   [Starting Spark Compose and simulators](#step-2-starting-spark-compose-and-simulators)
 -   [Configure OPCUA Agents](#step-3-configure-opcua-agents)
 -   [Starting PharmaCAP_Visualization docker compose](#step-4-starting-pharmacap_visualization-docker-compose)
@@ -34,7 +34,7 @@ This guide take "pharma" as starting working folder for each step.
 -   [Running the Algorithms](#step-7-running-the-algorithms)
 -   [Setting up Grafana](#step-8-setting-up-grafana)
 
-## Step 1: Organizing PharmaCAP_Processing Folder
+## Step 1: PharmaCAP_Processing Folder
 CAP Platform is already provided with all data necessary to deploy algorithms provided until now.
 If you have not to add/modify any solution, you can skip this step and go to step 2.
 Otherwise, to make any modification or addition to the algorithms, this is the folder structure:
@@ -255,8 +255,8 @@ This will add extra 8 giga and extra 8 vcores to the platform
 
 ## Step 8: Setting Up Grafana
 
-On first grafana deploy, dashboards must be created and imported. It is possible to login to grafana at **localhost:3000** and access with the default user "admin" "admin".
-Cap platform is provided with all Grafana dashboards already prepared in ENG environment. It is possible to find them in the following folder:
+On first grafana deploy, dashboards must be created or imported. It is possible to login to grafana at **localhost:3000** and access with the default user "admin" "admin".
+It is possible to find them in the following folder:
 
 **PharmaCAP_Visualization**<br/>
 ---| docker-compose.yml<br/>

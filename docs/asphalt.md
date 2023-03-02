@@ -25,7 +25,7 @@ The CAP platform is provided in two folders:
 This guide take "asphalt" as starting working folder for each step.
 
 ### DEPLOYMENT STEPS:
--   [Organizing asphaltCAP_Processing Folder](#step-1-organizing-asphaltcap_processing-folder)
+-   [AsphaltCAP_Processing Folder](#step-1-asphaltcap_processing-folder)
 -   [Starting Compose](#step-2-starting-compose)
 -   [Starting asphaltCAP_Visualization docker compose](#step-3-starting-asphaltcap_visualization-docker-compose)
 -   [Access Main Services](#step-4-access-main-services)
