@@ -1,6 +1,6 @@
 # Cleaning CAP Platform
 <div align="justify">
-Since CAP is continuously ingesting, processing and storing streams of data through long-lasting real-time algorithms, it continuously accumulates data within time. Provided version of CAP limits the amount of disk space required for docker logs and some algorithm execution, however some databases slowly continue to accumulate data. Through the bash command:</div>
+Since CAP is continuously ingesting, processing and storing streams of data through long-lasting real-time algorithms, it continuously accumulates data within time. Provided version of CAP limits the amount of disk space required for docker logs and some algorithm execution, however some databases slowly continue to accumulate data.</div> Through the bash command:
 ```
 docker system df
 ```
